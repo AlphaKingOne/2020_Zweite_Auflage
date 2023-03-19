@@ -41,7 +41,7 @@ $("#confidenceValueInput").change(function (event) {
 // und des Modells etwas dauern 
 
 async function loadPoseNetModel() {
-    net = await posenet.load(0.5);
+    net = await posenet.load(0,5); 
     $('#video').trigger('play');
     detectPose();
 }
